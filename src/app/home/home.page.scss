@@ -1,27 +1,41 @@
-#container {
+.centrado{
   text-align: center;
-
+}
+.bienvenida{
+  position: absolute  ;
+  text-align: center;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.duoc.cl/wp-content/uploads/2020/06/concepcion.jpg);
+  background-position: center;
+  background-size: cover;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.box{
+  width: 370px;
+  height: auto;
+  position: relative;
+  margin: 6% auto;
+  background: #ffff;
+  padding: 10px;
+  border-radius: 10px;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+#foto{
+  width: 100px;
+  display: block;
+  margin: 0px auto;
 }
-
-#container a {
-  text-decoration: none;
+#Centrar { 
+  display: flex;
+}
+.grupo{
+  width: 100%;
+  padding: 10px 0 ;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
 }

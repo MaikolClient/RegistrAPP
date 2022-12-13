@@ -1,0 +1,35 @@
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.duoc.cl/wp-content/uploads/2020/06/concepcion.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  #Perfil{
+    margin: 50%;
+  }
+  #H1{
+    text-align: center;
+  }
+  #Centrar {
+    display: flex;
+    justify-content: center;
+  }
+  .box{
+    width: 370px;
+    height: 530px;
+      position: relative;
+      margin: 6% auto;
+    background: #ffff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+.example-spacer {
+  flex: 1 1 auto;
+}
+  #curso {
+    height: 100%;
+    display: flex ;
+    width: 100%;
+  }

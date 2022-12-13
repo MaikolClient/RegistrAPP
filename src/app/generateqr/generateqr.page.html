@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="container">
+    <ion-card class="box">
+
+      <form>
+        <ion-button color="secundary" slot="start">
+          <ion-icon src="./assets/images/arrow-back-outline.svg"></ion-icon>
+        </ion-button>
+        <ion-card-content>
+          <ion-toolbar color="primary">
+            <ion-title id="titulo">Código QR</ion-title>
+          </ion-toolbar>
+          <ion-item lines="full">
+            <ion-label position="floating">Código Asignatura</ion-label>
+            <ion-input type="text" name="sigla" [(ngModel)]="sigla"></ion-input>
+          </ion-item>
+          <ion-item lines="full">
+            <ion-label position="floating">Fecha Sesión</ion-label>
+            <ion-input type="text" name="fecha" [(ngModel)]="fecha"></ion-input>
+          </ion-item>
+          <ion-item lines="full">
+            <ion-label position="floating">Hora Inicio/Termino</ion-label>
+            <ion-input type="text" name="hora" [(ngModel)]="hora"></ion-input>
+          </ion-item>
+          <ion-item lines="full">
+            <ion-label position="floating">Sala</ion-label>
+            <ion-input type="text" name="sala" [(ngModel)]="sala"></ion-input>
+          </ion-item>
+          <br>
+          <ion-button expand="full" (click)="create()" >Generar</ion-button>
+          <qrcode 
+          [qrdata]="createCode"
+          [width]="200"
+          [errorCorrectionLevel]="'M'"></qrcode>
+        </ion-card-content>
+
+      </form>
+    </ion-card>
+  </div>
+</ion-content>

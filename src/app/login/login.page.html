@@ -1,0 +1,32 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-card class="box">
+      <ion-card-header>
+      </ion-card-header>
+
+      <form [formGroup]="formularioLogin">
+        <ion-card-content>
+          <img class="logo" src="https://proyecto-final-6656c.firebaseapp.com/assets/img/logo.png">
+          <ion-item lines="full">
+            <ion-label position="floating">Usuario</ion-label>
+            <ion-input type="text" formControlName="usuario" required></ion-input>
+          </ion-item>
+          <ion-item lines="full">
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" formControlName="password" maxlength="6"></ion-input>
+          </ion-item>
+        </ion-card-content>
+        <br>
+        <ion-button block expand="full" (click)="ingresar()">Ingresar</ion-button>
+        <br>
+        <p>¿No tienes cuenta? <a [routerLink]="'/registrar'" > Registrar</a>
+        </p>
+      </form>
+
+    </ion-card>
+
+  </div>

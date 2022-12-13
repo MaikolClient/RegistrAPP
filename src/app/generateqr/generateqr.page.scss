@@ -1,0 +1,27 @@
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.duoc.cl/wp-content/uploads/2020/06/concepcion.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  #titulo {
+    text-align: center;
+  }
+  .logo{
+    width: 100%;
+  }
+  
+  .box{
+    width: 370px;
+    height: auto;
+    position: relative;
+    margin: 6% auto;
+    background: #ffff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  table {
+    width: 100%;
+  }

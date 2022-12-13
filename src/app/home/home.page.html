@@ -1,20 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="container">
+    <ion-card class="box">
+      <ion-card-header>
+        <img id="foto" src="https://cdn-icons-png.flaticon.com/512/206/206853.png">
+      </ion-card-header>
+      <div>
+        <h3 class="centrado">Información Personal</h3>
+        <ion-item lines="full">
+          <ion-label>Nombre : {{user.nombre}} </ion-label>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-label>Usuario :  {{user.usuario}}
+          </ion-label>
+        </ion-item>
+        <br>
+        <iframe id="Centrar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.9165368065505!2d-73.06507903471012!3d-36.79655147994929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b4503c9a1735%3A0x3fc32996839e6986!2sDuoc%20UC%3A%20Sede%20San%20Andr%C3%A9s%20De%20Concepci%C3%B3n!5e0!3m2!1ses-419!2scl!4v1666234901705!5m2!1ses-419!2scl" width="370" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <ion-button block expand="full" (click)="volver()">Volver</ion-button>
+        
+      </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    </ion-card>
+
   </div>
+
 </ion-content>

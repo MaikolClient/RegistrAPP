@@ -1,0 +1,46 @@
+<div class="container">
+  <ion-toolbar>
+    <ion-title>RegistrAPP</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon src="./assets/images/log-out-outline.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+<ion-card>
+  <br>
+  <h1 id="Centrar">Bienvenido, {{user.nombre}} </h1>
+  <ion-card>
+    <img id="curso" src="https://escuela.it/storage/course_images/portada-curso-angular-avanzado-53.jpg">
+    <ion-card-header>
+      <ion-card-title>Curso Angular</ion-card-title>
+      <ion-card-subtitle>Estás inscrito ha este curso</ion-card-subtitle>
+      <br>
+        <ion-button expand="full" (click)="generador()">Generar Código QR</ion-button>
+        <br>
+        <ion-button  expand="full" (click)="escaner()">Escanear Código QR</ion-button>
+    </ion-card-header>
+  </ion-card>
+</ion-card>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="inicio()">
+      <ion-icon src="./assets/images/home-outline.svg"></ion-icon>
+      <ion-label>Inicio</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="compas()">
+      <ion-icon src="./assets/images/chatbox-ellipses-outline.svg"></ion-icon>
+      <ion-label>Compañeros</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="perfil()">
+
+      <ion-icon src="./assets/images/person-circle-outline.svg"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</div>
